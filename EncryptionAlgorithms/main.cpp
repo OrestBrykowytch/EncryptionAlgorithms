@@ -4,6 +4,7 @@
 
 int choice;
 
+
 int main()
 {
 	RSA rsaObj;
@@ -11,7 +12,7 @@ int main()
 	XOR xorObj;
 
 	std::cout << "1: RSA Cipher" << std::endl;
-	std::cout << "2: Ceasar Cipher" << std::endl;
+	std::cout << "2: Ceasar Cipher (Can do file saves, didn't have the patience to do it for the others yet. Will Do later tho)" << std::endl;
 	std::cout << "3: XOR Cipher" << std::endl;
 	std::cout << "Please choose the cipher you wish to use: ";
 
@@ -29,6 +30,9 @@ int main()
 
 	case 3:
 		xorObj.xorCipher();
+		break;
+
+	case 4:
 		break;
 
 	default:
